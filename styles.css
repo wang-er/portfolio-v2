@@ -7,7 +7,8 @@ nav.navbar-brand a:hover { color: #fff !important; }
 	font: bold 3.2vw Consolas, Monaco, monospace;
 	
 	/*font-size: inherit;*/
-	border-right: .1em solid black;
+	border-right: .1em solid white;
+  color: white;
   letter-spacing: 0.3vw;
 	/*width: 16.5em; */
 	width: 34ch;
@@ -19,9 +20,9 @@ nav.navbar-brand a:hover { color: #fff !important; }
 }
 
 .titlebox{
-	 background: rgba(255, 255, 255, 0.2);
+	 background: rgba(0, 0, 0, 0.3);
   width: 80%;
-  padding: 5% 5%;
+  padding: 2% 5%;
   /*padding: 1em 1em 1em 1em;*/
   margin: 10% 10%;
 /*position:absolute; 
