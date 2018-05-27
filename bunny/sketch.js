@@ -49,19 +49,19 @@ var spotvar;
 ///preload, loading all images and font
 function preload(){
 
-bunnyLeft = loadImage("assets/bunnyLeft.png");
-bunnyRight = loadImage("assets/bunnyRight.png");
-bunnyFront = loadImage("assets/bunnyFront.png");
-bunnyBack = loadImage("assets/bunnyBack.png");
+bunnyLeft = loadImage("bunny/assets/bunnyLeft.png");
+bunnyRight = loadImage("bunny/assets/bunnyRight.png");
+bunnyFront = loadImage("bunny/assets/bunnyFront.png");
+bunnyBack = loadImage("bunny/assets/bunnyBack.png");
 
-carrotimg = loadImage("assets/carrot.png");
-floorimg = loadImage("assets/floor.png");
-tomatoimg = loadImage("assets/tomato.png");
-grassimg = loadImage("assets/grass.png");
+carrotimg = loadImage("bunny/assets/carrot.png");
+floorimg = loadImage("bunny/assets/floor.png");
+tomatoimg = loadImage("bunny/assets/tomato.png");
+grassimg = loadImage("bunny/assets/grass.png");
 
-bunnyEnd = loadImage("assets/bunnyEnd.png");
+bunnyEnd = loadImage("bunny/assets/bunnyEnd.png");
 
-font = loadFont('assets/Adelle_Reg.otf');
+font = loadFont('bunny/assets/Adelle_Reg.otf');
 
 }
 
