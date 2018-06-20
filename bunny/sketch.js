@@ -93,6 +93,7 @@ function draw(){
 function startScreen(){
   ///Starting screen graphics & rules///
   //background
+    imageMode(CORNER);
   background(grassimg);
 
   //title
@@ -173,6 +174,7 @@ bunnyvar = new Bunny(WIDTH/2, HEIGHT/2, bunnyFront);
 
 function update(){
 
+  imageMode(CORNER);
   //background update
   background(grassimg);
   noStroke();
@@ -219,6 +221,7 @@ if(spots.length < 3 + floor(score/10)) {
 //game over
 function gameOver(){
 
+  imageMode(CORNER);
   //graphics
   background(grassimg);
 
@@ -367,6 +370,7 @@ class platform {
   }
 
   display() {
+  	  imageMode(CORNER);
     // fill(25);
     // rect(this.x, this.y, this.length, this.length);
     image(floorimg, this.x, this.y, this.length, this.length);
