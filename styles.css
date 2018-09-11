@@ -1,41 +1,140 @@
-@-webkit-keyframes typing { from { width: 0; } }
+/*@-webkit-keyframes typing { from { width: 0; } }*/
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
-nav.navbar-brand a:hover { color: #fff !important; }
 
+.have-padding{
+  padding-top:70px;
+/*  padding-bottom:70px*/
+}
+
+.have-padding2{
+  padding-top:200px;
+  padding-bottom:200px;
+}
+
+.have-padding3{
+  padding-top:50px;
+  padding-bottom:50px
+}
+
+.have-padding4{
+/*  padding-top:50px;*/
+  padding-bottom:100px;
+}
+
+
+
+/*THE WEIRD BOX THING THING THING*/
+/*makes the dark gray box*/
+.titlebox{
+  background: rgba(0, 0, 0, 0.3);
+  width: 80%;
+  padding: 2% 5%;
+  margin: 10% 10%;
+}
+
+/*for about me and other smaller title choices*/
+.centered-title { 
+  font: bold 25px Consolas, Monaco, monospace;
+  color: white;
+  letter-spacing: 3px;
+  margin: 1em 1em 1em 1em;
+  white-space: nowrap;
+}
+
+.mini-titlebox{
+  background: rgba(0, 0, 0, 0.8);
+  width:26ch;
+  padding: 1% 5%;
+  margin: 10% 0% 0% 0%;
+ 
+}
+
+.mini-textbox{
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5% 5% 3%  5%;
+  margin: 5% 0% 5% 0%;
+  color: rgba(255, 255, 255);
+  letter-spacing: 1.75px;
+}
+
+.mini-textbox1{
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5%;
+  margin: 5% 0% 5% 0%;
+}
+
+.centered-title1 { 
+  font: bold 25px Consolas, Monaco, monospace;
+  color: white;
+  letter-spacing: 3px;
+  margin: 1em 1em 1em 1em;
+}
+
+
+/*the text box typing*/
 .typewriter { 
 	font: bold 3.2vw Consolas, Monaco, monospace;
-	
-	/*font-size: inherit;*/
 	border-right: .1em solid white;
   color: white;
   letter-spacing: 0.3vw;
-	/*width: 16.5em; */
 	width: 34ch;
 	margin: 1em 1em 1em 1em;
 	white-space: nowrap;
 	overflow: auto;
+
+  /*the animation thing*/
 	-webkit-animation: typing 1s steps(23, end),
 	           blink-caret .5s step-end infinite alternate;
 }
 
-.titlebox{
-	 background: rgba(0, 0, 0, 0.3);
-  width: 80%;
-  padding: 2% 5%;
-  /*padding: 1em 1em 1em 1em;*/
-  margin: 10% 10%;
-/*position:absolute; 
-top:50%; 
-height:10em;
- margin-top:-5em */
 
- 
-}
-
+/*the thing that makes the first screen somewhat full width?*/
 .main-wrapper {
   height: 100vh;  
 }
+
+
+.text-header {
+  color: white;
+  font-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-header {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.container-header{
+/*  height: 100vh;*/
+   width: 100%;
+
+}
+
+.container-header2{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 50vh;
+   width: 100%;
+
+}
+
+
+
 
 
 .overlay {
@@ -48,7 +147,7 @@ height:10em;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: black;
 }
 
 .row-height{
@@ -57,16 +156,7 @@ height:10em;
 }
 
 .row-body-height{
-	height: 47%
-}
-
-.container{
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	 height:100%;
-	 width: 50%;
+	height: 50%
 }
 
 .container-bunny{
@@ -89,10 +179,82 @@ height:10em;
 		 background-size: cover;
 }
 
+.container-food{
+     background: url("images/food.png") no-repeat center;
+     background-size: cover;
+}
+
+.container-book{
+     background: url("images/twobooks.png") no-repeat center;
+     background-size: cover;
+}
+
+.container-vr{
+     background: url("images/vr.png") no-repeat center;
+     background-size: cover;
+}
+
+.container-ar{
+     background: url("images/ar.png") no-repeat center;
+     background-size: cover;
+}
+
+.container-light{
+     background: url("images/light.png") no-repeat center;
+     background-size: cover;
+}
+
+.container-draw{
+     background: url("images/draw.png") no-repeat center;
+     background-size: cover;
+}  
+
+.container-poster{
+     background: url("images/infographics.png") no-repeat center;
+     background-size: cover;
+}  
+
+.container{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   height:50vh;
+   width: 50%;
+}
+
 .container:hover .overlay {
   opacity: 0.75;
 
 }
+
+.container-work{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   height:50vh;
+   width: 50%;
+   background-clip:content-box;
+}
+
+.container-work:hover .overlay-work {
+  opacity: 0.75;
+}
+
+.overlay-work {
+/*  position: absolute;*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
 
 .text {
   color: white;
@@ -103,7 +265,7 @@ height:10em;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  white-space: nowrap;
+/*  white-space: nowrap;*/
 }
 
 .image-fill{
@@ -128,57 +290,89 @@ height:10em;
   background-color: #f5f5f5;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
 .vertical-center {
 
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 70vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
 
 }
 
-/*.text-center {
-	font-size: 40px;
-	text-align: center;
 
-}*/
-
-.vertical-center-heading {
-
-  min-height: 100%; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
-
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+display:        inline;
+color:          white;                        
+font-family:    "Lao MN", Sans-serif;
+font-size:      .9em;
 }
 
-@media (max-width: 760px) { 
-
-.main-wrapper{
-  height:100%;
+/*change logo so it looks like you can hover it*/
+.navbar-default .navbar-brand:hover {
+  opacity: 0.75;
 }
 
-.container{
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-   height:50vw;
-   width: 50%;
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  opacity: 0.75;
+}
+
+.vbottom{
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%); 
+}
+
+.column-align-bottom{
+  display: table-cell;
+}
+
+.image-align-bottom{
+   display: inline-block;
+   vertical-align: bottom;
+}
+
+.i-am-centered { margin: auto; max-width: 1200px;}
+
+
+footer > div > div > a {  
+  fdisplay:        inline;
+color:          white;                        
+font-family:    "Lao MN", Sans-serif;
+font-size:      .9em;
 }
 
 
- }
+.box {
+   text-align: center;
+   vertical-align: middle;
+      border-radius: 4px;
+}
+
+/*.box-outside{
+    height: 100vw;
+    background: red;
+
+   margin: 15px 0px;
+
+}
+*/
+
+.margin-work{
+  margin:5px 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 
+.block-font-title{
+    font: bold 2.1em Consolas, Monaco, monospace;
+    letter-spacing: 1.5px;
+}
 
-
-
-
-
-
-
+.block-font-subtitle{
+    font: bold 1em Consolas, Monaco, monospace;
+    letter-spacing: 1.5px;
+}

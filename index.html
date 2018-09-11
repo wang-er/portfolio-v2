@@ -4,15 +4,16 @@
   <title>Erin Wang's Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.min.js"></script>
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.min.js"></script> -->
+
   <script src="sketch.js"></script>
 
   <style>
@@ -22,42 +23,58 @@
   </style>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
-    <a class="navbar-brand" href="#"><img src="images/logo-off.png" style="width:30px; height:30px"></a>
+
+
+
+
+
+
+
+
+
+<!-- <div class="main-wrapper"> -->
+
+
+<div class="container-fluid main-wrapper nopadding">
+
+   <!-- the navagation bar -->
+   <!-- it's inside the first container because it's overlapping the first part-->
+  <nav class="navbar  navbar-expand static-top">  
+    <a class="navbar-brand p-sm-4 p-3" href="index.html"><img src="images/logo-on.png" style="width:50px; height:50px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#section1">Home</a>
+
+  <ul class="nav navbar-nav ml-auto">
+
+<li class="nav-item p-sm-4 p-2 d-none d-md-block">
+      <a class="nav-link" href="index.html">HOME</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#section2">About</a>
+
+    <li class="nav-item p-sm-4 p-2">
+      <a class="nav-link" href="about.html">ABOUT</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#section3">Projects</a>
+    <li class="nav-item p-sm-4 p-2">
+      <a class="nav-link" href="work.html">WORK</a>
     </li>
-   <!--  <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Section 4
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#section41">Link 1</a>
-        <a class="dropdown-item" href="#section42">Link 2</a>
-      </div>
-    </li> -->
+    <li class="nav-item p-sm-4 p-2">
+      <a class="nav-link" href="contact.html">CONTACT</a>
+    </li>
+
   </ul>
 </div>
 </nav>
-<!-- <div class="main-wrapper"> -->
-<div id="section1" class="container-fluid main-wrapper nopadding">
+
+  <!-- old typewriting thing -->
   <div class="row nopadding">
     <div class="col-12 nopadding">
       <div class="vertical-center">
       <div class="titlebox">
+
   <h1 class="typewriter">&lterin class = "cs ui design"></h1> 
 </div>
 
@@ -65,6 +82,7 @@
 
   </div>
 
+</div>
 </div>
 
 <!-- <div class= "row nopadding">
@@ -76,157 +94,229 @@
 
 <!--   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p> -->
-</div>
 
-<div id="section2" class="container-fluid bg-warning main-wrapper" style="padding-top:70px;padding-bottom:70px">
+<div id="section2" class="container-fluid have-padding" style="background-color: lightgray">
 
-
+<div class="i-am-centered">
   <div class="row">
-    <div class="col-sm-12">
-  <h1 class="text-center">About</h1>
-</div>
-</div>
 
-  <br>
-<br>
-
-  <div class="row">
-    <div class="col-sm-4">
-      <img class="img-responsive img-thumbnail" src="images/profile-pic.jpg" alt="profile-pic">
-    </div>
-    <div class="col-sm-8">
-<p>Hi! I'm Erin Wang and I'm a first year Computer Science and Design major.
-            I'm taking this course (along with this entire major) because I've been always interested in
-            helping improve our experiences on the web. I've wanted to try out designing websites, but this 
-            is my first time taking a course specifically about it. I'm excited, but also a bit nervous because 
-            I've never really done anything except for a little bit of HTML and CSS.  
-            <br>
-            <br>
-            Other than that, I absolutely love playing games of all sorts. Card games, board games, video games, all of them. 
-            In fact, I'm currently on E-Board for Northeastern's board game club (NUAGE, come visit us!). If I had to pick a genre of games however,
-            my favorite would be rhythm games. I love listening to music and being able to "interact" with it at the same time.  Other things I like doing 
-            is doodling, figuring out escape rooms, sleeping, and chilling with friends. 
-          </p>
-          <div class="row">
-            <div class="col-sm-12">
-              <a href="assets/resume.pdf" download>
-          <button type="button" class="btn btn-block btn-outline-primary">View my resume!</button>
-        </a>
-        </div>
-<!--         <br>
+    <!-- about me section text -->
+    <div class="col-sm-6">
+    <!-- big title boi -->
+      <div class="row">
         <div class="col-sm-6">
-<button type="button" class="btn btn-block btn-outline-secondary">Secondary</button>
-</div> -->
+          <div class="mini-titlebox">
+          <p class ="centered-title"> Meet Erin.</p>
+        </div>
+        </div>
+        <div class="col-sm-6">
+        </div>
+      </div>
+
+      <!-- quick description -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="mini-textbox">
+          <p>I'm Erin Wang, and I've been studying Computer Science and Design. I hope that in the future I can help combine technology and art into one.
+            <br>
+          Other than that, I like to play around with board games.</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- the button to know more -->
+    <div class="row">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6">
+
+        <a href="about.html">
+          <button type="button" class="btn btn-outline-dark btn-block">Learn more →</button>
+        </a>
+
+      </div>
+      </div>
+
+
+
+  </div>
+
+
+
+
+    <!-- about me photo, the funny one? -->
+    <div class="col-sm-6 d-flex align-items-end justify-content-center">
+      <img  class="image-align-bottom" style= "max-width: 80%; padding-top: 10px;" src="images/lobster.png"/>
+    </div>
+
+    </div>
+
   </div>
 </div>
-</div>
+
+<div id="project-section" class="container-fluid bg-secondary">
 
 
 
+  <div class="row">
+    <!-- my work title thing, the left side -->
+    <!-- if the size is a big boi -->
+    <div class="col-sm-6 d-none d-sm-block container-header">
 
+      <div class="overlay-header">
+     <div class="text-header">
+      <div style="background-color: black; padding: 10vh 10vw;">
+      <p class="block-font-title" style="white-space: nowrap">My Work!</p>
 
+      <p>I do a variety of things,<br> but here's a quick preview!</p>
+
+    <a href="work.html">
+    <button type="button" class="btn btn-outline-light btn-block">View all projects →</button>
+    </a>
   </div>
 
-
-<div id="section3" class="container-fluid bg-success main-wrapper" style="padding-top:70px;padding-bottom:70px">
-  <div class="row row-height">
-    <div class="col-sm-12">
-  <h1 class="text-center">Projects</h1>
-</div>
-</div>
-
-  <br>
-<br>
-<br>
-
-<div class="row row-body-height">
-  <div class="col-sm-6 nopadding">
-    <a href="bunny.html">
-  <div class="container-bunny container">
-  <!-- <img src="images/profile-pic.jpg" alt="Avatar" class="image-fill"> -->
-  <div class="overlay">
-    <div class="text">
-    
-    <p>Carrot Collector</p>
-    <p>A game of a bunny collecting her carrots</p>
-    
+    </div>
     </div>
   </div>
-</div>
-</div>
-</a>
 
+  <!-- if the size is a small boi -->
 
-<div class="col-sm-6 nopadding">
-  <a href="sleep.html">
- <div class="container container-sleep">
- <!--  <img src="images/profile-pic.jpg" alt="Avatar" class="image-fill"> -->
-  <div class="overlay">
-    <div class="text">
-    
-    <p>Don't lose your Snooze!</p>
-    <p>An app to input your own data</p>
-    
+  <div class="col-sm-6 d-sm-none container-header2">
+
+      <div class="overlay-header">
+     <div class="text-header">
+      <div style="background-color: black; padding: 5vh 100vw;">
+     <p class="block-font-title" style="white-space: nowrap">My Work!</p>
+
+      <p>I do a variety of things,<br> but here's a quick preview!</p>
+
+    <a href="work.html">
+    <button type="button" class="btn btn-outline-light btn-block">View all projects →</button>
+    </a>
+  </div>
+
+    </div>
     </div>
   </div>
-</div>
-</div>
-</a>
-</div>
+
+    <!-- the actual projects -->
+    <div class="col-sm-6">
+
+      <div class="row">
 
 
-<div class="row row-body-height">
 
-  <div class="col-sm-6 nopadding">
-
-  <a href="music.html">
-  <div class="container-music container">
-  <!-- <img src="images/profile-pic.jpg" alt="Avatar" class="image-fill"> -->
-  <div class="overlay">
-    <div class="text">
+        <div class="col-12 col-lg-6 container container-bunny">
+          <a href="bunny.html">
+          <div class="overlay ">
+            <div class="text">
     
-    <p>Rainbow C Major</p>
-    <p>The magical piano</p>
+              <p class="block-font-subtitle">Carrot Collector</p>
+              <p>A game of a bunny collecting her carrots</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col-12 col-lg-6 container container-book">
+          <a href="book.html">
+          <div class="overlay ">
+            <div class="text">
     
+              <p class="block-font-subtitle">Book Design</p>
+              <p>Two books, a type book and a script</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+
+
+
+        <div class="col-12 col-lg-6 container container-light">
+          <a href="light.html">
+          <div class="overlay ">
+            <div class="text">
+    
+              <p class="block-font-subtitle">Light Em All!</p>
+              <p>A game where you have to light all pipes</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+
+        <div class="col-12 col-lg-6 container">
+          <a href="contact.html">
+          <div class="overlay ">
+            </div>
+
+            <div class="text">
+              <p class="block-font-title">& More!</p>
+              </div>
+            </a>
+              
+
+        </div>
+      </div>
+
+
+
     </div>
+
+
+
+
+
   </div>
-</div>
-</a>
+
+  </div>
+
+
+<div id="contact" class="container-fluid d-flex flex-column align-items-center have-padding2" style="background-color: lightgray">
+  <div class="d-flex flex-column align-items-center" style="background-color: white; padding: 50px;">
+
+      <p class="block-font-title">Want to learn more?</p>
+      <br>
+      <a href="contact.html">
+       <button type="button" class="btn btn-outline-dark">Contact me! →</button>
+     </a>
+   </div>
 </div>
 
 
-<div class="col-sm-6 nopadding">
-  <a href="cubes.html">
- <div class=" container-cubes container">
-  <!-- <img src="images/profile-pic.jpg" alt="Avatar" class="image-fill"> -->
-  <div class="overlay">
-    <div class="text">
-    
-    <p>Cubes</p>
-    <p>Pretty tessellations</p>
-    
+
+
+
+<footer class="container-fluid bg-secondary d-flex justify-content-center have-padding3">
+  <div class="row">
+    <div class="col i-am-centered"> 
+      <a href="index.html">HOME</a> 
     </div>
-  </div>
-</div>
-</a>
-</div>
+
+    <div class="col i-am-centered"> 
+      <a href="about.html">ABOUT</a> 
+    </div>
+
+     <div class="col i-am-centered"> 
+      <a href="index.html"><img src="images/logo-on.png" style="width:30px; height:30px"></a>
+    </div>
+
+        <div class="col i-am-centered"> 
+      <a href="work.html">WORK</a> 
+    </div>
+
+        <div class="col i-am-centered"> 
+      <a href="contact.html">CONTACT</a> 
+    </div>
 </div>
 
-</div>
-
-<footer class="container-fluid bg-4 text-center">
-  <p>Made by Erin Wang</p> 
 </footer>
-<!-- <div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
-  <h1>Section 4 Submenu 1</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
-  <h1>Section 4 Submenu 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div> -->
 
 </body>
 </html>
