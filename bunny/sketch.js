@@ -112,6 +112,7 @@ function startScreen(){
   fill(0, 100);
   rect(0,185, WIDTH, 150);
 
+  fill(255, 200, 0, 200);
   textAlign(LEFT);
   textSize(20);
   text("Instructions: You're a bunny", WIDTH/8, HEIGHT/2 - 20);
