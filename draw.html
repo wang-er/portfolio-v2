@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <meta name="author" content="Erin Wang">
+
   <title>Erin Wang's Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
 <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.min.js"></script> -->
 
-  <script src="bunny/sketch.js"></script>
-
+<script src="draw.js"></script>
   <style>
   body {
       position: relative; 
@@ -74,7 +76,7 @@
   <br>
 </div>
 
-<div id="section2" class="container-fluid container-bunny">
+<div id="section2" class="container-fluid container-draw">
 
 <div class="i-am-centered">
   <div class="row">
@@ -109,13 +111,13 @@
 </div>
 </div>
 
-<div class="container-fluid"  style="background-image: url(images/bunny.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
+<div class="container-fluid">
 <div class="row">
-  <div class="col-md-4 col-12 container"  style="background-image: url(images/bunny-end.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
+  <div class="col-md-4 col-12 container"  style="background-image: url(images/draw-end.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
   </div>
-    <div class="col-md-4 col-12 container "  style="background-image: url(images/bunny-middle.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
+    <div class="col-md-4 col-12 container "  style="background-image: url(images/draw-middle.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
   </div>
-    <div class="col-md-4 col-12 container"  style="background-image: url(images/bunny-title.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
+    <div class="col-md-4 col-12 container"  style="background-image: url(images/draw-start.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
   </div>
 </div>
 </div>
@@ -131,10 +133,29 @@
 
 
 
-       <button type="button" class="btn btn-outline-dark">See it in action! →</button>
+       <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#Modal">See it in action! →</button>
 </div>
 
-<footer class="container-fluid bg-secondary d-sm-flex justify-content-center have-padding3 d-none">
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Drawing Application</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+      </div>
+<!--       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid d-sm-flex justify-content-center have-padding3 d-none">
   <div class="row">
     <div class="col i-am-centered"> 
       <a href="index.html">HOME</a> 
@@ -159,7 +180,7 @@
 
 </footer>
 
-<footer class="container-fluid bg-secondary d-flex justify-content-center d-flex d-sm-none">
+<footer class="container-fluid d-flex justify-content-center d-flex d-sm-none">
   <div class="row" style="padding:10px">
 
 
