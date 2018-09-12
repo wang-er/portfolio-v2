@@ -74,7 +74,8 @@ font = loadFont('bunny/assets/Adelle_Reg.otf');
 function setup(){
 framerate = 20;
 
-createCanvas(WIDTH, HEIGHT);
+var myCanvas = createCanvas(WIDTH, HEIGHT);
+myCanvas.parent("modal-body");
 
 var randomNumber = floor(random(0,3));
 }

@@ -74,7 +74,7 @@
   <br>
 </div>
 
-<div id="section2" class="container-fluid bg-info">
+<div id="section2" class="container-fluid container-bunny">
 
 <div class="i-am-centered">
   <div class="row">
@@ -85,7 +85,7 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="mini-titlebox">
-          <p class ="centered-title"> My work.</p>
+          <p class ="centered-title"> Carrot Collector.</p>
         </div>
         </div>
         <div class="col-sm-6">
@@ -96,7 +96,7 @@
       <div class="row">
         <div class="col-sm-8">
           <div class="mini-textbox">
-          <p >A very very short blurb?</p>
+          <p >A short minigame of a bunny collecting her carrots.</p>
         </div>
         </div>
     </div>
@@ -109,21 +109,51 @@
 </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid"  style="background-image: url(images/bunny.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
 <div class="row">
-  <div class="col-md-4 col-12 container container-bunny bg-danger">
+  <div class="col-md-4 col-12 container"  style="background-image: url(images/bunny-end.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
   </div>
-    <div class="col-md-4 col-12 container bg-none">
+    <div class="col-md-4 col-12 container "  style="background-image: url(images/bunny-middle.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
   </div>
-    <div class="col-md-4 col-12 container bg-danger">
+    <div class="col-md-4 col-12 container"  style="background-image: url(images/bunny-title.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
   </div>
 </div>
 </div>
 
-<div id="contact" class="container-fluid bg-info d-flex flex-column align-items-center have-padding2">
+<div id="contact" class="container-fluid d-flex flex-column align-items-center have-padding-project">
 
-      <p>Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?Want to learn more?</p>
-       <button type="button" class="btn btn-outline-dark">See it in action! →</button>
+      <p style="font-size: 18px"><i>Carrot Collector</i> is a minigame about a bunny getting carrots and avoiding tomatoes. Why did I decide to go with this theme? Honestly, I asked my friend for a random idea and he challenged me to make a game with a pink, marshmallow bunny. Why is she collecting carrots? Because she's a bunny. Why is she avoiding tomatoes though? Well, I like to believe that bunnies hate tomatoes. As a child, I used to grow a bunch of fruits and vegetables. I once forgot to close the garden gate and rabbits ate everything except for the tomatoes. When I returned to the garden, all the plants were chewed off...all but the tomato plants. So yeah, I'm pretty sure bunnies hate tomatoes.<br><br>
+      As for the actual technical details of this game, it was made with JavaScript. Specifically, it was made with p5.js, a JavaScript Library that provides a lot of help on the visual aspects of code.
+<br><br>
+The assets such as the grass, the tomatoes, the ground, the carrot, and the bunny herself was all made by me...using a trackpad and a bit of offbrand MS Paint. That's right fellas, I used a trackpad on my laptop. I could've taken out my drawing tablet or used Adobe Illustrator to make these assets. However, I knew if I focused too much on the visual aspect, I would've taken longer making the actual game functional.
+<br><br>
+Anyways, that's my whole spiel of this game. I think it's fun, and people do like it. Click the link below to play it!  
+
+
+    </p>
+
+
+
+       <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#bunnyModal">See it in action! →</button>
+</div>
+
+<div class="modal fade" id="bunnyModal" tabindex="-1" role="dialog" aria-labelledby="bunnyModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Carrot Collector</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <canvas id="defaultCanvas0"></canvas>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <footer class="container-fluid bg-secondary d-sm-flex justify-content-center have-padding3 d-none">

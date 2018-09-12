@@ -14,7 +14,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
 <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.min.js"></script> -->
 
-  <!-- <script src="sketch.js"></script> -->
+  <script src="bunny/sketch.js"></script>
 
   <style>
   body {
@@ -25,22 +25,7 @@
 </head>
 <body>
 
-
-
-
-
-
-
-
-
-
-<!-- <div class="main-wrapper"> -->
-
-
-
-   <!-- the navagation bar -->
-   <!-- it's inside the first container because it's overlapping the first part-->
-   <nav class="navbar navbar-default navbar-expand static-top d-none d-sm-flex" style="background-color: rgba(0,0,0,0.9);">  
+<nav class="navbar navbar-default navbar-expand static-top d-none d-sm-flex" style="background-color: rgba(0,0,0,0.9);">  
     <a class="navbar-brand p-sm-4 p-3" href="index.html"><img src="images/logo-on.png" style="width:50px; height:50px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -89,21 +74,7 @@
   <br>
 </div>
 
-  <!-- old typewriting thing -->
-
-
-
-<!-- <div class= "row nopadding">
-  <img src="images/profile-pic.jpg" height="20px" width ="20px">
-</div> -->
-
-
-<!-- </div> -->
-
-<!--   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p> -->
-
-<div id="section2" class="container-fluid" style="background-image: url(images/telephone.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
+<div id="section2" class="container-fluid container-bunny">
 
 <div class="i-am-centered">
   <div class="row">
@@ -114,7 +85,7 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="mini-titlebox">
-          <p class ="centered-title">Contact Me.</p>
+          <p class ="centered-title"> Drawing Application.</p>
         </div>
         </div>
         <div class="col-sm-6">
@@ -123,12 +94,9 @@
 
       <!-- quick description -->
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8">
           <div class="mini-textbox">
-          <p >Name: Erin Wang</p>
-          <p >Email: erinwang101@gmail.com</p>
-          <p >Phone: (555) 555 - 5555</p> 
-          <!-- edit above phone when you think it's a good idea to release info -->
+          <p >A small app to draw things.</p>
         </div>
         </div>
     </div>
@@ -141,63 +109,30 @@
 </div>
 </div>
 
-<div id="section2" class="container-fluid" style="background-color: lightgray; padding-bottom: 50px">
-
-<div class="i-am-centered">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="mini-titlebox">
-          <p class ="centered-title"> Resumé</p>
-        </div>
-        </div>
-        <div class="col-sm-6">
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-12 col-md-6 container-work margin-work" style="background-color: #73b9cb">
-          <a href="assets/resume-cs.pdf" target="_blank">
-            <div class="overlay-work ">
-            </div>
-
-            <div class="text">
-    
-              <p class="block-font-title">Computer Science</p>
- 
-              </div>
-
-          </a>
-        </div>
-
-
-        <div class="col-12 col-md-6 container-work margin-work" style="background-color: #CB738D">
-          <a href="assets/resume-art.pdf" target="_blank">
-            <div class="overlay-work ">
-            </div>
-
-            <div class="text">
-    
-              <p class="block-font-title">Design</p>
-              </div>
-  
-          </a>
-        </div>
-
-
-        
-
-
-
-      </div>
+<div class="container-fluid"  style="background-image: url(images/bunny.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
+<div class="row">
+  <div class="col-md-4 col-12 container"  style="background-image: url(images/bunny-end.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
+  </div>
+    <div class="col-md-4 col-12 container "  style="background-image: url(images/bunny-middle.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
+  </div>
+    <div class="col-md-4 col-12 container"  style="background-image: url(images/bunny-title.png); background-position: center;  background-repeat: no-repeat; background-size: cover;">
   </div>
 </div>
+</div>
+
+<div id="contact" class="container-fluid d-flex flex-column align-items-center have-padding-project">
+
+      <p style="font-size: 18px"><i>Drawing Application</i> is an application done through JavaScript. You can change the size of the brush, along with the color too!<br><br>
+      All the graphics were done through p5.js.
+<br><br>
+
+
+    </p>
 
 
 
-
-
-
+       <button type="button" class="btn btn-outline-dark">See it in action! →</button>
+</div>
 
 <footer class="container-fluid bg-secondary d-sm-flex justify-content-center have-padding3 d-none">
   <div class="row">
@@ -236,5 +171,10 @@
 
 </footer>
 
+
+<!--     <div>
+      <p> <i>Carrot Collector</i> by Erin Wang, 2018</p>
+    </div> -->
+  
 </body>
 </html>
