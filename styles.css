@@ -1,6 +1,10 @@
 /*@-webkit-keyframes typing { from { width: 0; } }*/
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
+.btn.btn-square {
+  border-radius: 0;
+}
+
 
 .have-padding{
   padding-top:70px;
@@ -367,10 +371,16 @@ font-size:      .9em;
 
 
 footer > div > div > a {  
-  fdisplay:        inline;
+  display:        inline;
 color:          white;                        
 font-family:    "Lao MN", Sans-serif;
 font-size:      .9em;
+}
+
+footer > div > div > a:hover {  
+  color:          white; 
+opacity: 0.7;                      
+
 }
 
 
