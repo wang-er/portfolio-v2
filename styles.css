@@ -44,7 +44,16 @@
   color: white;
   letter-spacing: 3px;
   margin: 1em 1em 1em 1em;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
+}
+
+.centered-title-black { 
+  font: bold 25px Consolas, Monaco, Sans-serif;
+  color:  rgb(32,32,32);
+  letter-spacing: 3px;
+  text-align: right;
+ /* margin: 1em 1em 1em 1em;*/
+  /*white-space: nowrap;*/
 }
 
 .mini-titlebox{
@@ -209,6 +218,19 @@
      background-size: cover;
 }  
 
+.container-web{
+     background: url("images/web.png") no-repeat center;
+     background-size: cover;
+}  
+.container-web-design{
+     background: url("images/web.png") no-repeat center;
+     background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+
+}  
+
+
 .container{
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -260,6 +282,18 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+/*  white-space: nowrap;*/
+}
+
+.text-black {
+  color: rgb(56,56,56);
+  font-size: 100%;
+  /*position: absolute;*/
+  /*top: 50%;
+  left: 50%;*/
+/*  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  text-align: left;
 /*  white-space: nowrap;*/
 }
 
