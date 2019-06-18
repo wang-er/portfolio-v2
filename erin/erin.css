@@ -5,6 +5,27 @@
     line-height: 0.9;
 }
 
+.description{
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+}
+
+.phone-img {
+      width: 415px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.overlay-img {
+      position: absolute;
+    top: 4%;
+    right: 3%;
+    z-index: -1;
+}
+
+.icon-img {
+  width: 150px;
+}
 
 html,body {
   text-size-adjust: none;
@@ -14,9 +35,16 @@ html,body {
 }
 
 
-.red {fill:#D32027}
+.red {fill:#D32027; }
 .orange { fill:#FF8C42 }
 .yellow { fill:#FFF275}
+
+video {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  max-width: 858px;
+}
 
 /* Animate the background shapes */
 /*#background path {
@@ -113,18 +141,23 @@ svg {
 
 body{
   margin: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container{
   height: 100vh;
   /*width: 100vw;*/
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+} 
 
 .wrap {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5rem;
@@ -135,26 +168,25 @@ body{
   /*display: block;*/
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  
   /*font-size: 3rem;*/
   font-size: 50px;
-  padding-left: 5rem;
-  padding-right: 5rem;
+
+/*  padding-left: 5rem;
+  padding-right: 5rem;*/
 }
 
-@media (max-width:704px) {
 
-  /* your conditional / responsive CSS inside this condition */
-.text {
-
-  font-size: 25px;
-    padding-left: 0rem;
-  padding-right: 0rem;
-
+.link {
+   /*font-size: 20px;*/
+   font-size: 30px;
 }
 
-}
+.center-text {
+  text-align: center;
+} 
+
+
 
 #left_brow, #right_brow {
     -webkit-transition: all 0.2s ease-out;
@@ -168,60 +200,89 @@ body{
     transform:translate(0px,-2px);
 }
 
-/*.blink {
-  animation: blink-animation 10s steps(1, start) infinite;
-  -webkit-animation: blink-animation 1s steps(30, start) infinite;
-}
-@keyframes blink-animation {
-  to {
-    transform:scaleY(0.1);
-  }
-}
-@-webkit-keyframes blink-animation {
-  to {
-    transform:scaleY(0.1);
-  }
-
-
-}*/
-
-.link {
-   font-size: 20px;
+.fa {
+        -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.link > a {
-    color: #000;
+.fa-button {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+
+  background-color: #000;
+  color: white;
+
+
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+
+
+.social-media a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.link > a{
+    color: #D32027;
   text-decoration: none;
   position: relative;
 }
 
-.link > a:hover {
-    color: #000;
+.link > a:hover{
+    color: #D32027;
 }
 
 
-.link > a:after {
+.link > a:after{
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 5px;
   bottom: -5px;
   left: 0;
-  background-color: #000;
+  background-color: #D32027;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  transform-origin: 0 50%;
 
 }
 
-
-.link > a:hover:after {
+.link > a:hover:after{
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+
+.project-card:after {
+  content: "";
+  position: absolute;
+  top: 0;  left: 0;  right: 0;  bottom: 0;
+  background: #2098d1;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform .3s ease-out;
+  margin:30px 0px;
+}
+
 
 
 @keyframes blink {
@@ -248,22 +309,136 @@ body{
  
 }
 
-
+/*
 .project-card {
   padding: 50px;
   background-color: green;
   transition: transform ease .75s;
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-}
+  width: 50px;
+  height: 50px;
+  margin: 5px auto;
+}*/
 
 .project-card:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
+/*  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); */
+}
+
+
+.project-card:after {
+  content: "";
+  position: absolute;
+  z-index:-1;
+  top: 0;  left: 0;  right: 0;  bottom: 0;
+ background:#D32027;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform .3s ease-out;
+  margin:30px -15px;
+  z-index: 0;
+}
+
+.project-card:hover:after{transform: scaleX(1);}
+
+
+
+.project-card{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   height:20vh;
+   width: 100%;
+   background-clip:content-box;
+     margin:15px 0px;
+     transition: transform ease .75s;
+     position: relative;
+}
+
+
+.overlay-work {
+  height: 100%;
+  /*opacity: 0.5;*/
+  transition: .5s ease;
+  background-color: black;
+  /*z-index: 10;*/
+}
+
+
+.project-card-text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+    z-index: 10;
+  white-space: nowrap;
 }
 
 
 
+.home {
+  /*background-color : #31B0D5;*/
+  /*color: black;*/
+  /*padding: 10px 20px;*/
+  /*border-radius: 0px 0px 100px 100px;*/
+  /*background-image: url("home-icon.png");*/
+    position: fixed;
+  top: 25px;
+  left: 25px;
+  height: 50px;
+  font-size: 30px;
+  color: black;
+  /*background-size: cover;*/
+  /*border-color: #46b8da;*/
+}
+
+.home:hover {
+  color: black
+}
+
+
+
+@media (max-width:704px) {
+
+  /* your conditional / responsive CSS inside this condition */
+.text {
+
+  font-size: 25px;
+    padding-left: 0rem;
+  padding-right: 0rem;
+
+}
+
+.link {
+   /*font-size: 20px;*/
+   font-size: 20px;
+}
+
+.project-card {
+   margin:5px 0px;
+}
+
+.project-card-text {
+  font-size: 20px;
+}
+
+.description {
+  font-size: 18px;
+}
+
+.overlay-img {
+    right: -50%;
+}
+
+.phone-img {
+      width: 320px;
+}
+
+
+}
 

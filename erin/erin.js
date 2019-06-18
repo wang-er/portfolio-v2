@@ -6,7 +6,7 @@ var myFullpage = new fullpage('#fullpage', {
 
 
 
-const colors = ['#D32027','#FF8C42','#ffc430'];
+const colors = ['#D32027','#FF8C42','#ef4a13']; //#ef4a13 #ffc430
 const numLines = 1;
 var currCount = numLines;
 const texts = document.querySelectorAll("#textClip text");
@@ -30,6 +30,8 @@ function nextIteration() {
     for(let i = startVal; i < startVal + numLines; i++) {
     	texts[i].style.display = "none";
     }
+
+
     // Show new set of lines
     for(let j = currCount; j < currCount + numLines; j++) {
     	texts[j].style.display = "block";
@@ -39,6 +41,18 @@ function nextIteration() {
     if(currCount >= texts.length) {
     	currCount = 0;
     }
+
+        // myFunction();
+}
+
+
+function myFunction() {
+  var x = document.createElement("IMG");
+  x.setAttribute("src", "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
+  x.setAttribute("width", "304");
+  x.setAttribute("height", "228");
+  x.setAttribute("alt", "The Pulpit Rock");
+  document.getElementById("screen-desc").appendChild(x);
 }
 
 // Since all of our blobs are using the same animation, we only
