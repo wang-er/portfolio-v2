@@ -23,9 +23,17 @@
     z-index: -1;
 }
 
-.icon-img {
+.mockup-img {
   width: 49%;
   padding: 10px;
+}
+
+.icon-img {
+  width: 150px;
+}
+
+.screenshot-img{
+  height: 50vw;
 }
 
 .img-width {
@@ -445,12 +453,12 @@ body{
 }
 
 
-.icon-img {
+.mockup-img {
   width: 50%;
 
 }
 
-.icon-img-container {
+.mockup-img-container {
       display: flex;
   justify-content: center;
   align-items: center; 

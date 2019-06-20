@@ -1,6 +1,4 @@
 var myFullpage = new fullpage('#fullpage', {
-  scrollOverflow: true,
-  normalScrollElements: '#element2, .element2'
 			
 		});
 
