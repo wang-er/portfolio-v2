@@ -1,5 +1,5 @@
 var myFullpage = new fullpage('#fullpage', {
-			
+
 		});
 
 
@@ -60,3 +60,47 @@ function myFunction() {
 blobs[0].addEventListener("animationiteration", nextIteration);
 
 colorBlobs();
+
+
+
+
+$( document ).ready(function() { 
+  var tempWidth = $(document).width();
+
+  if( tempWidth < 575) {
+    pageSize = 3;
+  } else if (tempWidth < 993 && tempWidth > 575 ) {
+    pageSize = 4;
+  } else {
+    pageSize = 6;
+  }
+    
+    pagesCount = $(".content").length;
+    var currentPage = 1;
+    
+    /////////// PREPARE NAV ///////////////
+    var nav = '';
+    var totalPages = Math.ceil(pagesCount / pageSize);
+    for (var s = 0; s< totalPages; s++){
+        nav += '<li class="numeros"><a href="#">'+(s+1)+'</a></li>';
+    }
+    $(".pagination").append(nav);
+    $(".numeros").first().addClass("active");
+    //////////////////////////////////////
+
+    showPage = function() {
+        $(".content").hide(700).each(function(n) {
+            if (n >= pageSize * (currentPage - 1) && n < pageSize * currentPage)
+                $(this).show(700);
+        });
+    }
+    showPage();
+
+
+    $(".pagination li.numeros").click(function() {
+        $(".pagination li").removeClass("active");
+        $(this).addClass("active");
+        currentPage = parseInt($(this).text());
+        showPage();
+    });
+});
