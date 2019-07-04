@@ -30,8 +30,8 @@ let spots = [];
 let platforms = [];
 
 ///Constants for convenience
-let WIDTH = 500;
-let HEIGHT = 500;
+let WIDTH = 400;
+let HEIGHT = 400;
 
 let platformSize = 60;
 
