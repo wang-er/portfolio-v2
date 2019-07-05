@@ -75,7 +75,7 @@ function setup(){
 framerate = 20;
 
 var myCanvas = createCanvas(WIDTH, HEIGHT);
-myCanvas.parent("js-games");
+myCanvas.parent("js-game");
 
 var randomNumber = floor(random(0,3));
 }
