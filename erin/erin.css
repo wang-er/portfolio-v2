@@ -19,9 +19,12 @@
   position: absolute;
   top: 95px;
   left: 72px;
-  width: 276px;
+  width: 277px;
 }
 
+.bbbd {
+  top: 81px;
+}
 
 .overlay-img {
       position: absolute;
@@ -455,9 +458,76 @@ body{
 }
 
 .container-bunny{
-     background: url("images/bunny.png") no-repeat center;
-     background-size: cover;
+  background: url("images/bunny.png") no-repeat center;
+  background-size: cover;
 }
+
+.container-music{
+  background: url("images/music.png") no-repeat center;
+  background-size: cover;
+}
+
+.container-cubes{
+  background: url("images/cubes.png") no-repeat center;
+  background-size: cover;
+}
+
+.container-sleep{
+  background: url("images/sleep.png") no-repeat center;
+  background-size: cover;
+}
+
+.container-food{
+  background: url("images/food.png") no-repeat center;
+  background-size: cover;
+}
+
+.container-book{
+  background: url("images/twobooks.png") no-repeat center;
+  background-size: cover;
+}
+
+.container-vr{
+  background: url("images/vr.png") no-repeat center;
+  background-size: cover;
+}
+
+.container-ar{
+  background: url("images/ar.png") no-repeat center;
+  background-size: cover;
+}
+
+.container-light{
+  background: url("images/light.png") no-repeat center;
+  background-size: cover;
+}
+
+.container-draw{
+  background: url("images/draw.png") no-repeat center;
+  background-size: cover;
+}  
+
+.container-poster{
+  background: url("images/infographics.png") no-repeat center;
+  background-size: cover;
+}  
+
+.container-web{
+  background: url("images/web.png") no-repeat center;
+  background-size: cover;
+}  
+.container-web-design{
+  background: url("images/web.png") no-repeat center;
+  background-size: cover;
+ background-color: rgba(255, 255, 255, 0.6);
+ background-blend-mode: lighten;
+
+}  
+
+.container-hack{
+  background: url("images/hack.png") no-repeat center;
+  background-size: cover;
+}  
 
 
 
@@ -531,6 +601,10 @@ body{
 .book-pdf {
   border: none; 
   height: 30vh; 
+}
+
+.bbbd {
+  top: 60px;
 }
 
 
