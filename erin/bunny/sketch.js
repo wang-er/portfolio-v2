@@ -30,8 +30,8 @@ let spots = [];
 let platforms = [];
 
 ///Constants for convenience
-let WIDTH = 400;
-let HEIGHT = 400;
+let WIDTH = 500;
+let HEIGHT = 500;
 
 let platformSize = 60;
 
@@ -75,7 +75,7 @@ function setup(){
 framerate = 20;
 
 var myCanvas = createCanvas(WIDTH, HEIGHT);
-myCanvas.parent("js-game");
+myCanvas.parent("js-games");
 
 var randomNumber = floor(random(0,3));
 }

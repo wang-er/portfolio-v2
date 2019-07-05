@@ -12,20 +12,33 @@
 
 .phone-img {
       width: 415px;
-    opacity: 0.2;
-    z-index: -1;
 }
+
+
+.phone-screen {
+  position: absolute;
+  top: 95px;
+  left: 72px;
+  width: 276px;
+}
+
 
 .overlay-img {
       position: absolute;
     top: 4%;
     right: 3%;
     z-index: -1;
+    opacity: 0.6;
 }
 
 .mockup-img {
   width: 49%;
   padding: 10px;
+}
+
+
+.wire-img {
+  width: 80%
 }
 
 .icon-img {
@@ -231,7 +244,7 @@ body{
   transition: all 0.3s ease-in-out 0s;
 }
 
-.fa-button {
+.fa-button, .numeros {
   padding: 10px;
   font-size: 20px;
   width: 40px;
@@ -243,8 +256,18 @@ body{
 
   background-color: #000;
   color: white;
+  
+}
 
+.numeros.active {
+  background-color: #D32027;
+} 
 
+.numeros a {
+  color: white;
+  position: relative;
+  top: -3px;
+  text-decoration: none;
 
 }
 
@@ -475,12 +498,22 @@ body{
 }
 
 
+.phone-screen {
+  top: 72px;
+  left: 56px;
+  width: 213px;
+}
+
 
 .icon-img {
       width: 75px;
       height: 75px;
 }
 
+
+.wire-img {
+  width: 100%
+}
 
 
 
