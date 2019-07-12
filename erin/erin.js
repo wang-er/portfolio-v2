@@ -1,10 +1,7 @@
 var myFullpage = new fullpage('#fullpage', {
-
+  // anchors: ['', 'section1', 'bepis', 'section3'],
+  lockAnchors: true,
 		});
-
-
-
-
 
 const colors = ['#D32027','#FF8C42','#ef4a13']; //#ef4a13 #ffc430
 const numLines = 1;
