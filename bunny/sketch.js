@@ -75,7 +75,7 @@ function setup(){
 framerate = 20;
 
 var myCanvas = createCanvas(WIDTH, HEIGHT);
-myCanvas.parent("modal-body");
+myCanvas.parent("js-game");
 
 var randomNumber = floor(random(0,3));
 }
