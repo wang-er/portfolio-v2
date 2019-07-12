@@ -32,7 +32,7 @@ function nextIteration() {
     // Show new set of lines
     for(let j = currCount; j < currCount + numLines; j++) {
     	texts[j].style.display = "block";
-    	console.log("did I do it?");
+    	// console.log("did I do it?");
     }
     currCount += numLines;
     if(currCount >= texts.length) {
